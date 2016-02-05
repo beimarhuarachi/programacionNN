@@ -13,6 +13,7 @@
 //var squad=[];
  FORBIDDEN_VALUE: -999999;
 
+var almacen = [];
  
  var formation=new Array();
  var squad=new Array();
@@ -48,6 +49,7 @@ function tqe_perc()
 		for(i=0;i<count;i++)
 		{
 		    v[i]=[];
+        almacen[i]=[];
 		 for(j=0;j<count;j++)
 		     {
 		          id="#i"+i+j;
@@ -58,20 +60,22 @@ function tqe_perc()
                           }
                           else
                           {
-		              v[i][j]=(p);//var test=i+""+j;       
+		              v[i][j]=(p);//var test=i+""+j;  
+                  almacen[i][j] =(p);     
                           }
 		     }
 		}
 	   }
 	for(var i=0;i<count;i++)
 	{
-	formation[i]="M"+(i+1);
+	formation[i]="Tarea"+(i+1);
 	}
 	 for(var i=0;i<count;i++)
 	{
-	squad[i]="J"+(i+1);
+	squad[i]="Maquina"+(i+1);
 	}
 	matrix=v;
+    
 	var result=hungarianAlgortithm(formation,squad);
         $("#output").val(result);
 }
@@ -112,7 +116,7 @@ function tabls_creation()
 	  heading[0] = "Tarea/Maquina";
          for(var i=1;i<=count;i++)
           {
-	  heading[i] = "J"+i;
+	  heading[i] = "Maquina"+i;
 	  }
 	  // Insert the created elements into oTable.
 	  oTable.appendChild(oTHead);
@@ -143,7 +147,7 @@ function tabls_creation()
 	    oRow.setAttribute("align","center");
 	    oTBody.appendChild(oRow);
             oCell = document.createElement("TD");
-	    oCell.innerHTML = "M"+(i+1);
+	    oCell.innerHTML = "Tarea"+(i+1);
 	    oRow.appendChild(oCell);
 	    for (j=0;j<heading.length-1; j++)
 	    {
@@ -485,7 +489,9 @@ function tabls_creation()
        if (stars[i][j] == 1) {
       
          lineup+=getplayer(i,j)+"\n";
+         console.log(almacen[i][j]);
        }
+       // console.log(almacen[i][j]);
      }
    }
    return lineup;
@@ -493,7 +499,7 @@ function tabls_creation()
 
 function getplayer(i,j)
 {
-return formation[i]+" = "+squad[j];
+return formation[i]+" => "+squad[j] + " = " + almacen[i][j];
 }
 function HgCoords() {
  row = -1;
