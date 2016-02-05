@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)https://www.easycalculation.com/operations-research/work-assignment.php -->
+<html lang="en"><head profile="http://www.w3.org/2005/10/profile"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="shortcut icon" href="https://www.easycalculation.com/favicon.ico" type="image/x-icon">
+
+	<title>Hungarian Algorithm Calculator | Job / Work Assignment Problem Calculation </title>
+	
+	<meta name="viewport" content="width=device-width; initial-scale=1.0"> 
+	<meta name="keywords" content="work assignment problem calculator, work assignment calculator, work problem calculator, job assignment problem calculator, job assignment calculator, job problem calculator, Hungarian algorithm calculator, work assignment hungarian algorithm, job assignment hungarian algorithm, hungarian algorithm problems,"> 
+	<meta name="description" content="Online calculator to solve work or job assignment problems using Hungarian algorithm.">
+ 	<!-- main css -->
+	<link href="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/style.css" rel="stylesheet" type="text/css">
+	
+	<!-- html5.js for IE less than 9 -->
+	<!--[if lt IE 9]>
+		<script src="//www.easycalculation.com/js/html5.js"></script>
+	<![endif]-->
+	
+	<!-- css3-mediaqueries.js for IE less than 9 -->
+	<!--[if lt IE 9]>
+		<script src="//www.easycalculation.com/js/css3-mediaqueries.js"></script>
+	<![endif]-->
+	</head> 
+<body>
+<!-- header_part begins -->
+<div class="header_part">
+
+<!-- header begins -->
+	<header>
+	
+	<!-- header begins -->
+	<div class="header clearfix">
+	  
+		<div class="logo">
+				      <a href="https://www.easycalculation.com/">
+					<img src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/logo.png" alt="easycalculation.com"> 
+		</a>
+	</div>
+		<div class="right_head_nav">
+			<div class="right_head_search"><span class="icon-search icon-zoom45"></span><span class="right_search">
+				<div class="search">
+					<form action="https://www.easycalculation.com/search.php" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-5279176980875369:8996050927">
+    <input type="hidden" name="cof" value="FORID:10">
+    <input type="hidden" name="ie" value="UTF-8">
+    <input type="text" id="googleSearchId" name="q" class="search_box" placeholder="Google Custom Search">
+    <button class="search_button"></button>  </div>
+</form>				</div>
+			</span></div>
+			<div class="right_head_con hiox_language">
+			<span class="icon-earth3"></span>
+			<span class="right_text">
+			<span class="lang">English</span>			<!--span class="lang">Languages</span-->
+			<div class="hiox_language_list clearfix">
+			<ul>
+			<li> <a href="https://www.easycalculation.com/es/index.php"> <span> <img src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/trans.png" width="16" height="16" class="sprite_img sprite-Spain"></span><span>Español</span> </a> </li><li> <a href="https://www.easycalculation.com/fr/index.php"> <span> <img src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/trans.png" width="16" height="16" class="sprite_img sprite-France"></span><span>Français</span> </a> </li><li> <a href="https://www.easycalculation.com/de/index.php"> <span> <img src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/trans.png" width="16" height="16" class="sprite_img sprite-Germany"></span><span>Deutschland</span> </a> </li><li> <a href="https://www.easycalculation.com/zh/index.php"> <span> <img src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/trans.png" width="16" height="16" class="sprite_img sprite-China"></span><span>中国</span> </a> </li><li> <a href="https://www.easycalculation.com/pt/index.php"> <span> <img src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/trans.png" width="16" height="16" class="sprite_img sprite-Portugal"></span><span>Português</span> </a> </li><li> <a href="https://www.easycalculation.com/ru/index.php"> <span> <img src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/trans.png" width="16" height="16" class="sprite_img sprite-Russia"></span><span>Pусский</span> </a> </li><li> <a href="https://www.easycalculation.com/ja/index.php"> <span> <img src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/trans.png" width="16" height="16" class="sprite_img sprite-Japan"></span><span>日本語</span> </a> </li><li> <a href="https://www.easycalculation.com/tr/index.php"> <span> <img src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/trans.png" width="16" height="16" class="sprite_img sprite-Turkey"></span><span>Türk</span> </a> </li>			</ul>
+			</div>
+			</span>
+			
+			
+			</div>
+			<div class="right_head_con">
+			<span class="icon-lock39"></span><span class="right_text txtshdow"><a href="https://www.login.hiox.com/login?referrer=easycalculation.com"><span>Sign in</span></a></span>			</div>
+			</div>
+		</div>
+		<!-- header ends -->	
+	</header>
+	<!-- header ends -->
+<!-- navigation_part starts -->
+<div class="main_nav">
+    
+    <!-- nav begins -->
+	<nav>
+	<div class="nav clearfix" tabindex="0">
+		<ul>
+		<li> <a href="https://www.easycalculation.com/index.php" target="_parent">Calculators</a> </li><li> <a href="https://www.easycalculation.com/tutorial.php" target="_parent"> Tutorials </a> </li>
+			<li> <a href="https://www.easycalculation.com/operations-research/work-assignment.php#"> Converters </a>
+			<ul>
+				<li>
+					<ul>
+						<li> <a href="https://www.easycalculation.com/unit-conversion/index.php" target="_parent"> Unit Conversion </a> </li>
+						<li> <a href="https://www.easycalculation.com/currency-converter/index.php" target="_parent"> Currency Conversion </a> </li>
+					</ul>
+				</li>
+			</ul>
+			</li>
+			<li> <a href="https://www.easycalculation.com/faq/index.php" target="_parent"> Answers </a> </li>
+			<li> <a href="https://www.easycalculation.com/formulas/index.php" target="_parent"> Formulas </a> </li>
+			<li> <a href="https://www.easycalculation.com/math-facts/index.php" target="_parent"> Facts </a> </li>
+			<li> <a href="https://www.easycalculation.com/code/index.php" target="_parent"> Code </a> </li>
+			<li> <a href="https://www.easycalculation.com/maths-dictionary/index.php" target="_parent"> Dictionary </a> </li>
+			<li> <a href="https://www.easycalculation.com/calculator-download.php" target="_parent"> Download </a> </li>
+			<li> <a href="https://www.easycalculation.com/operations-research/work-assignment.php#"> Others </a>
+			<ul>
+				<li>
+					<ul>
+						<li> <a href="https://www.easycalculation.com/excel-calculators-download.php" target="_parent"> Excel </a> </li>
+						<li> <a href="https://www.easycalculation.com/charts-and-tables.php" target="_parent"> Charts &amp; Tables </a> </li>
+						<li> <a href="https://www.easycalculation.com/constant/constants.php" target="_parent"> Constants </a> </li>
+						<li> <a href="https://www.easycalculation.com/event/event-calendar.php" target="_parent"> Calendars </a> </li>
+						<li> <a href="https://www.easycalculation.com/theorems/geometry-theorems.php" target="_parent"> Theorems </a> </li>
+					</ul>
+				</li>
+			</ul>
+			</li>		</ul>
+	</div>
+	</nav> 
+</div>
+<!-- navigation_part ends -->
+</div>
+<!-- header_part Ends -->
+
+<!-- START DIV FOR ALARM -->
+<div id="alarmPop" style="display:none;">  </div>
+<!-- END DIV FOR ALARM -->
+<!-- content begins -->
+
+<div class="content clearfix" id="alarmContentDisplay">
+
+  <!-- content_left begins -->
+  <div class="content_left clearfix">
+<div class="clear"> </div>
+<div style="padding-top:7px"></div>
+<!-- ad begins -->
+    <!-- Code to placed for 728x90 ad -->
+    <div class="hiox-main-ad-flat">
+    <style>
+    .easycal-728-90-responsive { display: none;}
+    @media(min-width: 500px) { .easycal-728-90-responsive { width: 468px; height: 60px; display:inline-block; } }
+    @media(min-width: 800px) { .easycal-728-90-responsive { width: 728px; height: 90px; display:inline-block; } }
+    </style>
+    <script src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/ca-pub-5279176980875369.js"></script><script async="" src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/adsbygoogle.js"></script>
+    <!-- easycal-728-90-responsive -->
+    <ins class="adsbygoogle easycal-728-90-responsive" data-ad-client="ca-pub-5279176980875369" data-ad-slot="3642742530" data-adsbygoogle-status="done" style="width: 728px; height: 90px;"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><iframe width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;"></iframe></ins></ins></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </div>
+    <!-- Code to placed for 728x90 ad -->
+<!-- ad ends -->
+<div style="padding-top:7px"></div>
+<div class="clear"> </div><h1>Hungarian Algorithm Calculator</h1>
+   <div class="down_load_menu clearfix">
+    <nav class="clearfix" tabindex="0">
+        <ul>
+            <li>
+	     		<a href="https://www.easycalculation.com/operations-research/work-assignment.php">
+		<img src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/cals.png">&nbsp; Calculator </a>
+	    </li>
+
+            
+            
+
+                        
+	    	    
+	    
+	                 	<li>
+		<a><img src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/download.png">&nbsp; Download</a>
+                <ul>
+                               <li><a href="https://www.easycalculation.com/paypal/paypal.php?calc_url=1778" rel="nofollow">
+		<img src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/list.png">&nbsp; Script</a></li>
+                   
+
+            	
+            	
+                
+   
+                </ul>
+            </li>
+                	    
+           
+        </ul>
+    </nav>
+</div>
+<p>Hungarian algorithm is used for the optimal assignment of jobs to workers in one-to-one manner and to reduce the cost of the assignment. In this calculator, you can solve the work assignment problem with the hungarian algorithm.</p><div class="clear"> </div>
+<!-- ad begins -->
+<center>
+<!-- Code to placed for 728x90 ad -->
+    <div class="hiox-main-ad-flat" style="margin:15px auto;">
+    <style>
+    .easycal-728-90-responsive-mob { width: 300px; height: 250px; display:inline-block;}
+    @media(min-width: 500px) { .easycal-728-90-responsive-mob { display: none; } }
+    </style>
+    <script async="" src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/adsbygoogle.js"></script>
+    <!-- easycal-728-90-responsive -->
+    <ins class="adsbygoogle easycal-728-90-responsive-mob" data-ad-client="ca-pub-5279176980875369" data-ad-slot="3642742530" data-adsbygoogle-status="done" style="width: 300px; height: 250px;"><!--No ad requested because of display:none on the adsbygoogle tag--></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </div>
+    <!-- Code to placed for 728x90 ad --> 
+<!-- ad ends -->
+</center>
+<div class="clear"> </div>  
+     <!-- ec_calculator begins -->
+     <div class="ec_calculator_gen clearfix">
+	<h2>Job / Work Assignment Problem Calculation</h2>
+		<div class="clearfix"></div>	<div class="clear"></div>
+	<form name="first">
+	 <div id="overlayLoader" style="top: 429.25px; display: none;">
+		    <div class="loader"> </div>
+		</div>
+		<div id="dispCalcConts" style="opacity: 1;">
+<div class="group clearfix">
+<label>Enter matrix size</label>
+<input type="text" id="input" onkeyup="tabls_creation();" class="easypositive">
+</div>
+
+<div id="matrix1" class="table"><table class="bg4" align="center"><thead><tr><th>Jobs/Man</th><th>J1</th><th>J2</th><th>J3</th><th>J4</th><th>J5</th></tr></thead><tbody><tr align="center"><td>M1</td><td><input type="text" size="4" id="i00" class="easynumeric"></td><td><input type="text" size="4" id="i01" class="easynumeric"></td><td><input type="text" size="4" id="i02" class="easynumeric"></td><td><input type="text" size="4" id="i03" class="easynumeric"></td><td><input type="text" size="4" id="i04" class="easynumeric"></td></tr><tr align="center"><td>M2</td><td><input type="text" size="4" id="i10" class="easynumeric"></td><td><input type="text" size="4" id="i11" class="easynumeric"></td><td><input type="text" size="4" id="i12" class="easynumeric"></td><td><input type="text" size="4" id="i13" class="easynumeric"></td><td><input type="text" size="4" id="i14" class="easynumeric"></td></tr><tr align="center"><td>M3</td><td><input type="text" size="4" id="i20" class="easynumeric"></td><td><input type="text" size="4" id="i21" class="easynumeric"></td><td><input type="text" size="4" id="i22" class="easynumeric"></td><td><input type="text" size="4" id="i23" class="easynumeric"></td><td><input type="text" size="4" id="i24" class="easynumeric"></td></tr><tr align="center"><td>M4</td><td><input type="text" size="4" id="i30" class="easynumeric"></td><td><input type="text" size="4" id="i31" class="easynumeric"></td><td><input type="text" size="4" id="i32" class="easynumeric"></td><td><input type="text" size="4" id="i33" class="easynumeric"></td><td><input type="text" size="4" id="i34" class="easynumeric"></td></tr><tr align="center"><td>M5</td><td><input type="text" size="4" id="i40" class="easynumeric"></td><td><input type="text" size="4" id="i41" class="easynumeric"></td><td><input type="text" size="4" id="i42" class="easynumeric"></td><td><input type="text" size="4" id="i43" class="easynumeric"></td><td><input type="text" size="4" id="i44" class="easynumeric"></td></tr></tbody></table></div>
+
+<div class="group clearfix">
+<input type="button" value="Calculate" onclick="tqe_perc()" style="visibility: visible;">
+<input type="reset" onclick="clearall()" value="Reset" style="visibility: visible;"><div class="errClass" id="dynErrDisp"></div><div id="calciScroll"></div><div class="errClass" id="dynErrDisp" style="display: none;"></div><div id="calciScroll"></div><div class="errClass" id="dynErrDisp" style="display: none;"></div><div id="calciScroll"></div><div class="errClass" id="dynErrDisp" style="display: none;"></div><div id="calciScroll"></div><div class="errClass" id="dynErrDisp" style="display: none;"></div><div id="calciScroll"></div><div class="errClass" id="dynErrDisp" style="display: none;"></div><div id="calciScroll"></div>
+</div>
+
+<div class="group clearfix">
+<label>Work Assigned to Persons</label>
+<textarea id="output" rows="2" cols="30" readonly=""></textarea>
+</div>
+</div>	</form>
+     </div>
+     <!-- ec_calculator ends -->
+     <div class="clear"> </div>
+<script type="text/javascript">
+	var easyinputs = document.getElementsByTagName("INPUT");
+	for (var ies = 0; ies < easyinputs.length; ies++)
+	{
+	    if (easyinputs[ies].type === 'button')
+	    { 
+		easyinputs[ies].style.visibility='hidden';
+		if ((easyinputs[ies].offsetTop-10)<0)
+		{
+			document.getElementById("overlayLoader").style.top = (document.getElementById('dispCalcConts').offsetTop+(document.getElementById('dispCalcConts').offsetHeight/4))+"px";
+		}
+		else
+		{
+			document.getElementById("overlayLoader").style.top = (easyinputs[ies].offsetTop-10)+"px";
+		}
+	    }
+	    else
+	    {
+		document.getElementById("overlayLoader").style.top = (document.getElementById('dispCalcConts').offsetTop+(document.getElementById('dispCalcConts').offsetHeight/4))+"px";
+	    }
+	    if (easyinputs[ies].type === 'reset')
+	    { 
+		easyinputs[ies].style.visibility='hidden';
+	    }
+	}
+</script>
+
+<div><div class="f_left">Code to add this calci to your website <img src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/embed-plus.gif" alt="Expand embed code" onclick="embedshowhide(&quot;expand&quot;)"> <img src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/embed-minus.gif" alt="Minimize embed code" onclick="embedshowhide(&quot;minimize&quot;)"> <div id="embedisp" style="">
+		      <font style="font-size:small">Just copy and paste the below code to your webpage where you want to display this calculator. </font> <br> <div id="embdWidHei" style="display: none;"> <input type="text" placeholder="Width" id="embdWidth" class="easypositive-integer textbox input_width_small"> <input type="text" placeholder="Height" id="embdHeight" class="easypositive-integer textbox input_width_small"> <input type="hidden" value="https://www.easycalculation.com/operations-research/embedded_work-assignment.php" id="embedUrl"> <input type="button" value="Get Code" onclick="getEmbededCode()" class="green_button" style="visibility: visible;">
+		      </div> <div align="center" id="embdTextarea" style="display: block;">
+		       <textarea class="auto_selectemb" name="type" id="embdTxt">		       </textarea></div></div></div><div class="f_right"></div></div><div class="clearfix"></div><div class="paddingTop"></div>
+<div align="center"><div class="clear"> </div>
+  <!-- boxad begins -->
+    <!-- Code to placed for First 300x250 ad -->
+    <div align="center">
+    <div class="hiox-main-ad-rect1">
+      <script async="" src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/adsbygoogle.js"></script>
+      <!-- easycal-300-250-responsive -->
+      <ins class="adsbygoogle easycal-300-250-responsive" style="display: inline-block; min-width: 300px; max-width: 750px; width: 730px; min-height: 90px; max-height: 300px; height: 250px;" data-ad-client="ca-pub-5279176980875369" data-ad-slot="6596208935" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:730px;background-color:transparent"><ins id="aswift_1_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:730px;background-color:transparent"><iframe width="730" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;"></iframe></ins></ins></ins>
+      
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    </div>
+    <div style="clear: both;"></div>
+    <!-- Code to placed for Second 300x250 ad -->
+      <!-- boxad ends -->
+    <div class="clear"> </div>
+</div> 
+<div class="calc_example clearfix">
+ <h3> Example: </h3>
+ <p>Consider there are 3 jobs, should be assigned to 3 workers (one job to each). The cost of assigning the jobs are : </p>
+ <table class="matrixFormat">
+    <tbody><tr> <th>Jobs/Man</th> <th> J1 </th> <th> J2 </th> <th> J3 </th> </tr>
+    <tr> <th> M1 </th> <td> 52 </td> <td> 19 </td> <td> 20 </td> </tr>
+    <tr> <th> M2 </th> <td> 8 </td> <td> 83 </td> <td> 24 </td> </tr>
+    <tr> <th> M3 </th> <td> 42 </td> <td> 35 </td> <td> 89 </td> </tr>
+ </tbody></table>
+    <div class="calc_example_con clearfix">
+        <div class="calc_example_con_left"><span class="calc_example_hand"></span></div>
+        <div class="calc_example_con_right">
+        <h4>Step 1 :</h4>
+        <p><strong> Subtract row minima, </strong> <br>
+         Subtract the minimum value of the row from other values. <br>
+        </p>
+        <table class="matrixFormat">
+           <tbody><tr> <th>Jobs/Man</th> <th> J1 </th> <th> J2 </th> <th> J3 </th> <th> Row Minima </th> </tr>
+           <tr> <th> M1 </th> <td> 33 </td> <td> 0 </td> <td> 1 </td> <th> -19 </th> </tr>
+           <tr> <th> M2 </th> <td> 0 </td> <td> 75 </td> <td> 16 </td> <th> -8 </th> </tr>
+           <tr> <th> M3 </th> <td> 7 </td> <td> 0 </td> <td> 54 </td> <th> -35 </th> </tr>
+        </tbody></table>
+        </div>
+    </div>
+
+    <div class="calc_example_con clearfix">
+        <div class="calc_example_con_left"><span class="calc_example_hand"></span></div>
+        <div class="calc_example_con_right">
+        <h4>Step 2 :</h4>
+        <p><strong> Subtract column minima, </strong> <br>
+          Subtract the minimum value of the column from other values. <br>
+        </p>
+        <table class="matrixFormat">
+           <tbody><tr> <th>Jobs/Man</th> <th> J1 </th> <th> J2 </th> <th> J3 </th> </tr>
+           <tr> <th> M1 </th> <td> 33 </td> <td> 0 </td> <td> 0 </td> </tr>
+           <tr> <th> M2 </th> <td> 0 </td> <td> 75 </td> <td> 15 </td> </tr>
+           <tr> <th> M3 </th> <td> 7 </td> <td> 0 </td> <td> 53 </td> </tr>
+           <tr> <th> Col. Minima </th> <th> </th> <th> </th> <th> -1 </th> </tr>
+        </tbody></table>
+        </div>
+    </div>
+
+    <div class="calc_example_con clearfix">
+        <div class="calc_example_con_left"><span class="calc_example_hand"></span></div>
+        <div class="calc_example_con_right">
+        <h4>Step 3 :</h4>
+        <p><strong> Cover all zeros with a minimum number of lines, </strong> </p> <br>
+        <table class="matrixFormat">
+           <tbody><tr> <th>Jobs/Man</th> <th> J1 </th> <th> J2 </th> <th> J3 </th> </tr>
+           <tr> <th> M1 </th> <td class="matrixHighLight"> 33 </td> <td class="matrixHighLight"> 0 </td> <td class="matrixHighLight"> 0 </td> </tr>
+           <tr> <th> M2 </th> <td class="matrixHighLight"> 0 </td> <td class="matrixHighLight"> 75 </td> <td class="matrixHighLight"> 15 </td> </tr>
+           <tr> <th> M3 </th> <td class="matrixHighLight"> 7 </td> <td class="matrixHighLight"> 0 </td> <td class="matrixHighLight"> 53 </td> </tr>
+        </tbody></table>
+        </div>
+    </div>
+
+    <div class="calc_example_con clearfix">
+        <div class="calc_example_con_left"><span class="calc_example_hand"></span></div>
+        <div class="calc_example_con_right">
+        <h4>Step 4 :</h4>
+        <p><strong> Choose zero's  </strong> </p> <br>
+        <table class="matrixFormat">
+           <tbody><tr> <th>Jobs/Man</th> <th> J1 </th> <th> J2 </th> <th> J3 </th> </tr>
+           <tr> <th> M1 </th> <td> 33 </td> <td> 0 </td> <td class="matrixHighLight"> 0 </td> </tr>
+           <tr> <th> M2 </th> <td class="matrixHighLight"> 0 </td> <td> 75 </td> <td> 15 </td> </tr>
+           <tr> <th> M3 </th> <td> 7 </td> <td class="matrixHighLight"> 0 </td> <td> 53 </td> </tr>
+        </tbody></table>
+        </div>
+    </div>
+
+    <div class="calc_example_con clearfix">
+        <div class="calc_example_con_left"><span class="calc_example_hand"></span></div>
+        <div class="calc_example_con_right">
+        <h4>Step 5 :</h4>
+        <p><strong> Apply the selection to the original matrix, that will be the jobs assigned to them and adding cost of all assigned jobs will be the minimum cost. </strong> </p> <br>
+        <table class="matrixFormat">
+           <tbody><tr> <th>Jobs/Man</th> <th> J1 </th> <th> J2 </th> <th> J3 </th> </tr>
+           <tr> <th> M1 </th> <td> 52 </td> <td> 19 </td> <td class="matrixHighLight"> 20 </td> </tr>
+           <tr> <th> M2 </th> <td class="matrixHighLight"> 8 </td> <td> 83 </td> <td> 24 </td> </tr>
+           <tr> <th> M3 </th> <td> 42 </td> <td class="matrixHighLight"> 35 </td> <td> 89 </td> </tr>
+        </tbody></table>
+        </div>
+    </div>
+
+</div>
+
+<p><b><i>Job Assignment Problem </i></b>with concept of<b><i> Hungarian algorithm </i></b> is made easier here.</p><div class="clear"> </div><div class="general_list clearfix">
+        <h4>Related Calculators:</h4>
+        <ul><li> <a href="https://www.easycalculation.com/operations-research/job-sequencing-problem-calculator.php"> Job Sequencing Problem </a> </li><li> <a href="https://www.easycalculation.com/operations-research/inventory-control-model.php"> Inventory Control Model </a> </li><li> <a href="https://www.easycalculation.com/operations-research/minimum-transportation-northwest-corner-method.php"> North West Corner Method </a> </li><li> <a href="https://www.easycalculation.com/operations-research/minimum-transportation-vogel-approximation-method.php"> Vogel Approximation Method </a> </li><li> <a href="https://www.easycalculation.com/operations-research/gaussjacobi.php"> Gauss Jacobi Iteration Method Calculator </a> </li></ul> </div><div class="paddingTop"></div><div class="clearfix"></div>    
+  </div>
+  <!-- content_left ends -->
+  
+  <!-- content_right begins -->
+  <div class="content_right clearfix">
+  
+    <!-- right_menu_box begins -->
+    <div class="right_menu_box">
+
+<script> var leftTreeText = 'Science'</script>   <h3 class="right_h3"><a href="https://www.easycalculation.com/"><span class="right_home"><img src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/trans.png" width="30" height="28" alt="english" class="sprite_img sprite-home">
+		 </span><span style="color: #404040;padding:7px 0;display:inline-block;">Calculators and Converters</span> </a></h3>
+	       </div>
+	     <div class="clearfix"></div>
+	     <div class="breadcrumb clearfix">
+						<ul>
+							<li> <span style="margin-left:1em;"> ↳ </span> </li>
+							<li> <a href="https://www.easycalculation.com/calculators.php"> Calculators </a> </li> <br>
+							<li> <span style="margin-left:1.5em;"> ↳ </span> </li><li> <a href="https://www.easycalculation.com/operations-research/index.php"> Operations Research </a> </li></ul>
+					</div><div class="desktopDisp"><div align="center">
+     <style>
+    .easycal-300-250-responsive2 { display: none;}
+    @media(min-width:500px) { .easycal-300-250-responsive2 { width: 300px; height: 250px; display:inline-block; } }
+    @media(min-width:1020px) { .easycal-300-250-responsive2 { width: 250px; height: 250px; display:inline-block;} }
+    @media(min-width:1250px) { .easycal-300-250-responsive2 { width: 300px; height: 250px; display:inline-block;} }
+    </style>
+       <script async="" src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/adsbygoogle.js"></script>
+        <!-- easycal-300-250-responsive2 -->
+        <ins class="adsbygoogle easycal-300-250-responsive2" data-ad-client="ca-pub-5279176980875369" data-ad-slot="3140091333" data-adsbygoogle-status="done" style="width: 300px; height: 250px;"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><ins id="aswift_2_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><iframe width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;"></iframe></ins></ins></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+</div></div>	      <div class="paddingTop clearfix"></div>
+	      	      <!--div class="paddingTop"></div-->
+	      <!-- right_menu_box ends -->
+	     <div class="clearfix"></div>     
+	      
+	      <!-- right_menu_box begins -->
+<div class="right_menu_box_promo" align="center">
+<h2 class="right_h2">Top Calculators<span class="right_h2_arrow sprite-li_hd_bg_a"></span></h2>
+<ul>
+  <li> <a href="https://www.easycalculation.com/love/love.php"><img src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/love.png"> <span> LOVE Game </span> </a> </li><li> <a href="https://www.easycalculation.com/statistics/standard-deviation.php"><img src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/standard-deviation-calculation.png"> <span> Standard Deviation </span> </a> </li><li> <a href="https://www.easycalculation.com/date-day/age-calculator.php"><img src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/age-calculator.png"> <span> Age Calculator </span> </a> </li><li> <a href="https://www.easycalculation.com/health/bmi-calculator.php"><img src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/bmi-calculator.png"> <span> BMI </span> </a> </li></ul>
+</div>	    <div class="paddingTop"></div>
+	      <div class="right_menu_box">
+	      <h2 class="right_h2">Popular Calculators<span class="right_h2_arrow sprite-li_hd_bg_a"></span></h2>
+	      <ul>
+		<li><a href="https://www.easycalculation.com/differentiation/derivative-calculator.php">Derivative Calculator</a></li>
+		    <li><a href="https://www.easycalculation.com/matrix/matrix-inverse.php">Inverse of Matrix Calculator</a></li>
+		    <li><a href="https://www.easycalculation.com/compound-interest.php">Compound Interest Calculator</a></li>
+		    <li><a href="https://www.easycalculation.com/health/pregnancy.php">Pregnancy Calculator Online</a></li>	      </ul>
+	      </div>
+	      <!-- right_menu_box ends -->
+	     <div class="clearfix"></div>     
+	    <div class="paddingTop"></div>
+	      <!-- right_menu_box begins -->
+	      <div class="right_menu_box">
+	      <h2 class="right_h2">Top Categories<span class="right_h2_arrow sprite-li_hd_bg_a"></span></h2>
+	      <ul>
+		<li><a href="https://www.easycalculation.com/algebra/algebra.php"><span class="sprite-right_ar1"></span>Algebra</a></li><li><a href="https://www.easycalculation.com/analytical/analytical.php"><span class="sprite-right_ar1"></span>Analytical</a></li><li><a href="https://www.easycalculation.com/date-day/dates.php"><span class="sprite-right_ar1"></span>Date Day</a></li><li><a href="https://www.easycalculation.com/finance/finance.php"><span class="sprite-right_ar1"></span>Finance</a></li><li><a href="https://www.easycalculation.com/health/health.php"><span class="sprite-right_ar1"></span>Health</a></li><li><a href="https://www.easycalculation.com/mortgage/mortgage.php"><span class="sprite-right_ar1"></span>Mortgage</a></li><li><a href="https://www.easycalculation.com/numbers.php"><span class="sprite-right_ar1"></span>Numbers</a></li><li><a href="https://www.easycalculation.com/physics/physics.php"><span class="sprite-right_ar1"></span>Physics</a></li><li><a href="https://www.easycalculation.com/statistics/statistics.php"><span class="sprite-right_ar1"></span>Statistics</a></li>		<div class="general_list2_more"><a href="https://www.easycalculation.com/calculators.php">More</a> </div>
+	      </ul>
+	      </div>
+	      <!-- right_menu_box ends -->
+	     <div class="clearfix"></div>     
+    <br>
+  </div>
+  <!-- content_right ends -->
+</div>
+<!-- content ends -->
+
+<!-- footer starts -->
+<div class="footer clearfix">
+  
+  <div class="footer_con">
+    <div align="center">
+     <style>
+    .easycal-300-250-responsive2-mob { display:inline-block; width: 300px; height: 250px; }
+    @media(min-width: 500px) { .easycal-300-250-responsive2-mob { display:none; } }
+    </style>
+       <script async="" src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/adsbygoogle.js"></script>
+        <!-- easycal-300-250-responsive2-mob -->
+        <ins class="adsbygoogle easycal-300-250-responsive2-mob" data-ad-client="ca-pub-5279176980875369" data-ad-slot="3140091333" data-adsbygoogle-status="done" style="width: 300px; height: 250px;"><!--No ad requested because of display:none on the adsbygoogle tag--></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script> 
+</div>
+  <h3>About Easy calculation</h3>
+
+  <p>
+Our free online Mathematics tools (converter or calculator) are used  to make the calculation and conversion of math easier and to provide simple solutions. Get in touch with us @ <a href="mailto:support@easycalculation.com">support@easycalculation.com </a>  </p>
+    <div class="clear"> </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+	var chf_rss=true;
+	function getPathFromUrl(url){return url.split("?")[0];}
+	var curUrl = window.location.pathname; 
+	var basName = curUrl.replace(/^.*[\/\\]/g, '');
+</script>
+<script src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/jquery.min.js"></script>
+<script src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/common.js"></script>
+<script src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/jquery.sticky.js"></script>
+<!--script src='//www.easycalculation.com/fact-slider.js'></script-->
+<script type="text/javascript" src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/assign.js"> </script>		<script type="text/javascript">
+		function alert(val)
+		{
+		    $("#dynErrDisp").show();
+		    $("#dynErrDisp").html(val);
+		}
+		$(document).ready(function() {
+			closeModal();
+		});
+		</script>
+    <script>
+	$(document).ready(function() {
+	    chf_utils();
+	});
+    </script>
+    
+<meta name="viewport" content="width=device-width; initial-scale=1.0;">
+<script type="text/javascript">
+    var chf_sess = "";
+    var chf_sess_mail = "";
+    var chf_sess_mobile = "";
+</script>
+<link rel="stylesheet" type="text/css" href="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/chf_style.css">
+<script type="text/javascript" src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/chf_script.js"></script><div class="clear"></div><div class="cmn_site_footer chf_clearfix"><div class="cmn_footer_content"><div class="cmn_terms csf_left csf_mobile"><a title="Sitemap" href="https://www.easycalculation.com/sitemap.xml"><span class="chf_sitemap"></span></a><span class="chf_rss1" style="display: inline;">|</span><a title="Rss" class="chf_rss" href="https://www.easycalculation.com/rss.xml" style="display: inline;"><span class="chf_rssfeed"></span></a>|<a title="Terms" href="https://www.easycalculation.com/terms.php"><span class="chf_terms"></span></a>|<a title="Privacy" href="https://www.easycalculation.com/privacy.php"><span class="chf_privacy"></span></a>|<a href="https://www.easycalculation.com/about-us.php" title="About">About</a>|<a href="https://www.easycalculation.com/contact-us.php" title="Contact">Contact</a></div><div class="cmn_terms csf_left csf_desktop"><a href="https://www.easycalculation.com/contact-us.php" title="Contact">Contact</a>||<a href="https://www.easycalculation.com/about-us.php" title="About">About</a>||<a title="Privacy" href="https://www.easycalculation.com/privacy.php"><span class="chf_privacy"></span></a>||<a title="Terms" href="https://www.easycalculation.com/terms.php"><span class="chf_terms"></span></a>||<a title="Rss" class="chf_rss" href="https://www.easycalculation.com/rss.xml" style="display: inline;"><span class="chf_rssfeed"></span></a><span class="chf_rss1" style="display: inline;">||</span><a title="Sitemap" href="https://www.easycalculation.com/sitemap.xml"><span class="chf_sitemap"></span></a></div><div class="cmn_terms csf_right"><a href="https://www.hioxindia.com/" target="_blank" title="Web Hosting">Web Hosting</a> by Hiox India</div></div></div><div class="common_footer chf_clearfix"><div class="common_footer_left chf_clearfix"><div class="chf_nav" tabindex="0"><ul class="chf_clearfix"><li><a href="javascript:void(0)"><span class="chf_Learn_f"></span><span class="category_name">Learn</span></a><ul><li><a class="chf_highlight_green" target="_blank" href="https://www.shorttutorials.com/"><span class="chf_shorttutorials"></span><span class="chf_pad_left">Short Tutorials</span><div class="chf_text_span">shorttutorials.com</div> </a></li><li><a target="_blank" href="https://www.qforquiz.com/"><span class="chf_qforquiz"></span><span class="chf_pad_left">Test Your IQ</span><div class="chf_text_span">qforquiz.com</div> </a></li><li><a target="_blank" href="https://www.interviewkiller.com/"><span class="chf_interviewkiller"></span><span class="chf_pad_left">Mock Interview</span><div class="chf_text_span">interviewkiller.com</div> </a></li><li><a target="_blank" href="https://www.hscripts.com/"><span class="chf_hscripts"></span><span class="chf_pad_left">Webmaster Resources</span><div class="chf_text_span">hscripts.com</div> </a></li><li><a target="_blank" href="https://www.bforball.com/"><span class="chf_bforball"></span><span class="chf_pad_left">Kids Education</span><div class="chf_text_span">bforball.com</div> </a></li><li><a class="chf_highlight_green" target="_blank" href="https://www.easycalculation.com/"><span class="chf_easycalculation"></span><span class="chf_pad_left">Calculators Online</span><div class="chf_text_span">easycalculation.com</div> </a></li></ul></li><li><a href="javascript:void(0)"><span class="chf_Info_f"></span><span class="category_name">Info</span></a><ul><li><a class="chf_highlight_green" target="_blank" href="https://www.statsmonkey.com/"><span class="chf_statsmonkey"></span><span class="chf_pad_left">Statistics in Graphs</span><div class="chf_text_span">statsmonkey.com</div> </a></li><li><a target="_blank" href="https://www.findheight.com/"><span class="chf_findheight"></span><span class="chf_pad_left">Find Height</span><div class="chf_text_span">findheight.com</div> </a></li><li><a target="_blank" href="https://www.mycollege.in/"><span class="chf_mycollege"></span><span class="chf_pad_left">Indian Institutions</span><div class="chf_text_span">mycollege.in</div> </a></li><li><a target="_blank" href="https://www.newsreporter.in/"><span class="chf_newsreporter"></span><span class="chf_pad_left">Indian News</span><div class="chf_text_span">newsreporter.in</div> </a></li><li><a target="_blank" href="https://www.whoisthisip.com/"><span class="chf_whoisthisip"></span><span class="chf_pad_left">Ip Whois</span><div class="chf_text_span">whoisthisip.com</div> </a></li><li><a target="_blank" href="https://www.worlddomainstats.com/"><span class="chf_worlddomainstats"></span><span class="chf_pad_left">Domain Statistics</span><div class="chf_text_span">worlddomainstats.com</div> </a></li><li><a class="chf_highlight_green" target="_blank" href="https://www.etime.zone/"><span class="chf_timezoneguide"></span><span class="chf_pad_left">Timezone Guide</span><div class="chf_text_span">etime.zone</div> </a></li></ul></li><li><a href="javascript:void(0)"><span class="chf_Share_f"></span><span class="category_name">Share</span></a><ul><li><a class="chf_highlight_green" target="_blank" href="https://www.tufing.com/"><span class="chf_tufing"></span><span class="chf_pad_left">Social Sharing</span><div class="chf_text_span">tufing.com</div> </a></li><li><a target="_blank" href="https://www.hiox.org/"><span class="chf_org"></span><span class="chf_pad_left">Question &amp; Answers</span><div class="chf_text_span">hiox.org</div> </a></li><li><a target="_blank" href="https://www.fancygreetings.com/"><span class="chf_fancygreetings"></span><span class="chf_pad_left">Fancy Greetings</span><div class="chf_text_span">fancygreetings.com</div> </a></li><li><a target="_blank" href="https://www.quotespick.com/"><span class="chf_quotespick"></span><span class="chf_pad_left">Best Quotes</span><div class="chf_text_span">quotespick.com</div> </a></li><li><a class="chf_highlight_green" target="_blank" href="http://eluthu.com/"><span class="chf_eluthu"></span><span class="chf_pad_left">தமிழ் எழுத்து</span><div class="chf_text_span">eluthu.com</div> </a></li></ul></li><li><a href="javascript:void(0)"><span class="chf_Fun_f"></span><span class="category_name">Fun</span></a><ul><li><a target="_blank" href="https://www.cricruns.com/"><span class="chf_cric"></span><span class="chf_pad_left">Live Cricket Scores</span><div class="chf_text_span">cricruns.com</div> </a></li><li><a target="_blank" href="https://www.svgimages.com/"><span class="chf_svgimages"></span><span class="chf_pad_left">SVG Images</span><div class="chf_text_span">svgimages.com</div> </a></li><li><a target="_blank" href="http://funmin.com/"><span class="chf_funmin"></span><span class="chf_pad_left">Small Games</span><div class="chf_text_span">funmin.com</div> </a></li><li><a target="_blank" href="https://www.speechandtext.com/"><span class="chf_hiox_speech"></span><span class="chf_pad_left">Speech to Text</span><div class="chf_text_span">speechandtext.com</div> </a></li><li><a target="_blank" href="http://tinybrainy.com/"><span class="chf_tinybrainy"></span><span class="chf_pad_left">One Min Games</span><div class="chf_text_span">tinybrainy.com</div> </a></li><li><a class="chf_highlight_green" target="_blank" href="https://www.withfriendship.com/"><span class="chf_withfriendship"></span><span class="chf_pad_left">Viral Videos</span><div class="chf_text_span">withfriendship.com</div> </a></li></ul></li><li><a href="javascript:void(0)"><span class="chf_Buy_f"></span><span class="category_name">Buy</span></a><ul><li><a target="_blank" href="https://www.hibihi.com/"><span class="chf_hibihi"></span><span class="chf_pad_left">Online Shopping</span><div class="chf_text_span">hibihi.com</div> </a></li><li><a target="_blank" href="https://www.hiox.com/"><span class="chf_hiox"></span><span class="chf_pad_left">HIOX</span><div class="chf_text_span">hiox.com</div> </a></li><li><a target="_blank" href="https://www.hioxcloud.com/"><span class="chf_hiox_cloud"></span><span class="chf_pad_left">Cloud Hosting</span><div class="chf_text_span">hioxcloud.com</div> </a></li><li><a class="chf_highlight_green" target="_blank" href="https://www.hioxindia.com/"><span class="chf_hioxindia"></span><span class="chf_pad_left">Web Hosting</span><div class="chf_text_span">hioxindia.com</div> </a></li></ul></li></ul></div><div class="chf_hiox_special chf_clearfix" id="chf_hiox_special_div_id"><div><div class="chf_hiox_special_d"><a href="https://www.easycalculation.com/love/love.php" target="_blank"><img src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/love-calculator-pc.gif" style="width:100px;height:30px;" border="0" title="Love Calculator" alt="Love Calculator"></a></div><div class="chf_hiox_special_m"><a href="https://www.easycalculation.com/love/love.php" target="_blank"><img src="./Hungarian Algorithm Calculator _ Job _ Work Assignment Problem Calculation_files/love-calculator-mobile.gif" style="width:32px;height:30px;" border="0" title="Love Calculator" alt="Love Calculator"></a></div></div></div></div><div class="common_footer_right chf_clearfix" tabindex="0"><a href="javascript:chf_gotobkmrk(&quot;w&quot;);"><span class="chf_hiox_whats" title="Share on whatsapp"></span></a><input type="button" onclick="chf_show_sub()" class="chf_share_btn" style="visibility: visible;"><div class="chf_bookmarks_part chf_clearfix"><div class="common_footer_socialmedia"><ul class="chf_clearfix"><li class="chf_tuf_share"><a href="javascript:void(0);"><span class="chf_tuf" title="Share on tufing" onclick="chf_gotobkmrk(&quot;tuf&quot;);"></span></a></li><li><a href="javascript:void(0);"><span class="chf_fb" title="Share on facebook" onclick="chf_gotobkmrk(&quot;f&quot;);"></span></a></li><li><a href="javascript:void(0);"><span class="chf_twitter" title="Share on twitter" onclick="chf_gotobkmrk(&quot;t&quot;);"></span></a></li><li><a href="javascript:void(0);"><span class="chf_g" title="Share on google plus" onclick="chf_gotobkmrk(&quot;g&quot;);"></span></a></li><li class="cf_share"><a href="javascript:void(0);"><span class="chf_share_new" title="Share on social media"></span></a></li><li><a href="javascript:void(0);"><span title="Subscribe" class="chf_sub_class"></span></a></li></ul></div></div></div></div><span class="chf_show_footer"><input title="Close footer" class="chf_chf_down" type="button" id="close_button" style="visibility: visible;"></span><div class="chf_mob_love chf_clearfix" style="display:none;"><ul class="chf_clearfix"><li id="whats_app"><a href="javascript:void(0);"><span class="chf_hiox_special_whats" title="Share on whatsapp" onclick="chf_gotobkmrk(&quot;w&quot;);"></span></a></li><li id="facebook_li"><a href="javascript:void(0);"><span class="chf_faceb" title="Share on facebook" onclick="chf_gotobkmrk(&quot;f&quot;);"></span></a></li><li id="twitter_li"><a href="javascript:void(0);"><span class="chf_twit" title="Share on twitter" onclick="chf_gotobkmrk(&quot;t&quot;);"></span></a></li><li id="gplus_li"><a href="javascript:void(0);"><span class="chf_gp" title="Share on google plus" onclick="chf_gotobkmrk(&quot;g&quot;);"></span></a></li><li id="linkedin_li"><a href="javascript:void(0);"><span class="chf_ln" title="Share on linked in" onclick="chf_gotobkmrk(&quot;l&quot;);"></span></a></li><li id="reddit_li"><a href="javascript:void(0);"><span class="chf_redit" title="Share on reddit" onclick="chf_gotobkmrk(&quot;r&quot;);"></span></a></li><li id="cf_pin"><a href="javascript:void(0);"><span class="chf_pin" title="Share on pintertest" onclick="chf_gotobkmrk(&quot;p&quot;);"></span></a></li><li class="chf_tuf_share"><a href="javascript:void(0);"><span class="chf_tuff" title="Share on tufing" onclick="chf_gotobkmrk(&quot;tuf&quot;);"></span></a></li><li><a href="javascript:void(0);"><span title="Subscribe" class="chf_sub_class chf_sub_class_mob"></span></a></li></ul></div><div id="chf_sub_site" class="common_footer_main_div"><form method="post" name="sfrm"><input type="hidden" name="chf_sub_type" id="chf_sub_type"><div id="semail" class="common_footer_sub_div"><input type="email" name="chf_sub_email" id="chf_sub_email" placeholder="Email" class="common_footer_sub_txt_email"><input type="button" value="Subscribe" name="chf_sub_mailbut" id="chf_sub_mailbut" onclick="send_subscribe()" class="common_footer_sub_but" style="visibility: visible;"></div><div id="smobile" class="common_footer_sub_div"><select name="chf_cn_code" id="chf_cn_code" class="common_footer_sub_sel"><option value="">Country</option><option value="93">Afghanistan</option><option value="355">Albania</option><option value="213">Algeria</option><option value="1-684">American Samoa</option><option value="376">Andorra</option><option value="244">Angola</option><option value="1-264">Anguilla</option><option value="672">Antarctica</option><option value="1-268">Antigua and Barbuda</option><option value="54">Argentina</option><option value="374">Armenia</option><option value="297">Aruba</option><option value="61">Australia</option><option value="43">Austria</option><option value="994">Azerbaijan</option><option value="1-242">Bahamas</option><option value="973">Bahrain</option><option value="880">Bangladesh</option><option value="1-246">Barbados</option><option value="375">Belarus</option><option value="32">Belgium</option><option value="501">Belize</option><option value="229">Benin</option><option value="1-441">Bermuda</option><option value="975">Bhutan</option><option value="591">Bolivia</option><option value="599">Bonaire</option><option value="387">Bosnia and Herzegovina</option><option value="267">Botswana</option><option value="47">Bouvet Island</option><option value="55">Brazil</option><option value="246">British Indian Ocean Territory</option><option value="673">Brunei Darussalam</option><option value="359">Bulgaria</option><option value="226">Burkina Faso</option><option value="257">Burundi</option><option value="855">Cambodia</option><option value="237">Cameroon</option><option value="1">Canada</option><option value="238">Cape Verde</option><option value="1-345">Cayman Islands</option><option value="236">Central African Republic</option><option value="235">Chad</option><option value="56">Chile</option><option value="86">China</option><option value="61">Christmas Island</option><option value="61">Cocos (Keeling) Islands</option><option value="57">Colombia</option><option value="269">Comoros</option><option value="242">Congo</option><option value="243">Democratic Republic of the Congo</option><option value="682">Cook Islands</option><option value="506">Costa Rica</option><option value="385">Croatia</option><option value="53">Cuba</option><option value="599">CuraÃ§ao</option><option value="357">Cyprus</option><option value="420">Czech Republic</option><option value="225">CÃ´te d'Ivoire</option><option value="45">Denmark</option><option value="253">Djibouti</option><option value="1-767">Dominica</option><option value="1-809,1-829,1-849">Dominican Republic</option><option value="593">Ecuador</option><option value="20">Egypt</option><option value="503">El Salvador</option><option value="240">Equatorial Guinea</option><option value="291">Eritrea</option><option value="372">Estonia</option><option value="251">Ethiopia</option><option value="500">Falkland Islands (Malvinas)</option><option value="298">Faroe Islands</option><option value="679">Fiji</option><option value="358">Finland</option><option value="33">France</option><option value="594">French Guiana</option><option value="689">French Polynesia</option><option value="262">French Southern Territories</option><option value="241">Gabon</option><option value="220">Gambia</option><option value="995">Georgia</option><option value="49">Germany</option><option value="233">Ghana</option><option value="350">Gibraltar</option><option value="30">Greece</option><option value="299">Greenland</option><option value="1-473">Grenada</option><option value="590">Guadeloupe</option><option value="1-671">Guam</option><option value="502">Guatemala</option><option value="44">Guernsey</option><option value="224">Guinea</option><option value="245">Guinea-Bissau</option><option value="592">Guyana</option><option value="509">Haiti</option><option value="504">Honduras</option><option value="852">Hong Kong</option><option value="36">Hungary</option><option value="354">Iceland</option><option value="91">India</option><option value="62">Indonesia</option><option value="98">Iran, Islamic Republic of</option><option value="964">Iraq</option><option value="353">Ireland</option><option value="44">Isle of Man</option><option value="972">Israel</option><option value="39">Italy</option><option value="1-876">Jamaica</option><option value="81">Japan</option><option value="44">Jersey</option><option value="962">Jordan</option><option value="7">Kazakhstan</option><option value="254">Kenya</option><option value="686">Kiribati</option><option value="850">Korea, Democratic People's Republic of</option><option value="82">Korea, Republic of</option><option value="965">Kuwait</option><option value="996">Kyrgyzstan</option><option value="856">Lao People's Democratic Republic</option><option value="371">Latvia</option><option value="961">Lebanon</option><option value="266">Lesotho</option><option value="231">Liberia</option><option value="218">Libya</option><option value="423">Liechtenstein</option><option value="370">Lithuania</option><option value="352">Luxembourg</option><option value="853">Macao</option><option value="389">Macedonia, the Former Yugoslav Republic of</option><option value="261">Madagascar</option><option value="265">Malawi</option><option value="60">Malaysia</option><option value="960">Maldives</option><option value="223">Mali</option><option value="356">Malta</option><option value="692">Marshall Islands</option><option value="596">Martinique</option><option value="222">Mauritania</option><option value="230">Mauritius</option><option value="262">Mayotte</option><option value="52">Mexico</option><option value="691">Micronesia, Federated States of</option><option value="373">Moldova, Republic of</option><option value="377">Monaco</option><option value="976">Mongolia</option><option value="382">Montenegro</option><option value="1-664">Montserrat</option><option value="212">Morocco</option><option value="258">Mozambique</option><option value="95">Myanmar</option><option value="264">Namibia</option><option value="674">Nauru</option><option value="977">Nepal</option><option value="31">Netherlands</option><option value="687">New Caledonia</option><option value="64">New Zealand</option><option value="505">Nicaragua</option><option value="227">Niger</option><option value="234">Nigeria</option><option value="683">Niue</option><option value="672">Norfolk Island</option><option value="1-670">Northern Mariana Islands</option><option value="47">Norway</option><option value="968">Oman</option><option value="92">Pakistan</option><option value="680">Palau</option><option value="970">Palestine, State of</option><option value="507">Panama</option><option value="675">Papua New Guinea</option><option value="595">Paraguay</option><option value="51">Peru</option><option value="63">Philippines</option><option value="870">Pitcairn</option><option value="48">Poland</option><option value="351">Portugal</option><option value="1">Puerto Rico</option><option value="974">Qatar</option><option value="40">Romania</option><option value="7">Russian Federation</option><option value="250">Rwanda</option><option value="262">Reunion</option><option value="590">Saint Barthalemy</option><option value="290">Saint Helena</option><option value="1-869">Saint Kitts and Nevis</option><option value="1-758">Saint Lucia</option><option value="590">Saint Martin (French part)</option><option value="508">Saint Pierre and Miquelon</option><option value="1-784">Saint Vincent and the Grenadines</option><option value="685">Samoa</option><option value="378">San Marino</option><option value="239">Sao Tome and Principe</option><option value="966">Saudi Arabia</option><option value="221">Senegal</option><option value="381">Serbia</option><option value="248">Seychelles</option><option value="232">Sierra Leone</option><option value="65">Singapore</option><option value="1-721">Sint Maarten (Dutch part)</option><option value="421">Slovakia</option><option value="386">Slovenia</option><option value="677">Solomon Islands</option><option value="252">Somalia</option><option value="27">South Africa</option><option value="500">South Georgia and the South Sandwich Islands</option><option value="211">South Sudan</option><option value="34">Spain</option><option value="94">Sri Lanka</option><option value="249">Sudan</option><option value="597">Suriname</option><option value="47">Svalbard and Jan Mayen</option><option value="268">Swaziland</option><option value="46">Sweden</option><option value="41">Switzerland</option><option value="963">Syrian Arab Republic</option><option value="886">Taiwan, Province of China</option><option value="992">Tajikistan</option><option value="255">United Republic of Tanzania</option><option value="66">Thailand</option><option value="670">Timor-Leste</option><option value="228">Togo</option><option value="690">Tokelau</option><option value="676">Tonga</option><option value="1-868">Trinidad and Tobago</option><option value="216">Tunisia</option><option value="90">Turkey</option><option value="993">Turkmenistan</option><option value="1-649">Turks and Caicos Islands</option><option value="688">Tuvalu</option><option value="256">Uganda</option><option value="380">Ukraine</option><option value="971">United Arab Emirates</option><option value="44">United Kingdom</option><option value="1">United States</option><option value="1">United States Minor Outlying Islands</option><option value="598">Uruguay</option><option value="998">Uzbekistan</option><option value="678">Vanuatu</option><option value="58">Venezuela</option><option value="84">Viet Nam</option><option value="1-284">British Virgin Islands</option><option value="1-340">US Virgin Islands</option><option value="681">Wallis and Futuna</option><option value="212">Western Sahara</option><option value="967">Yemen</option><option value="260">Zambia</option><option value="263">Zimbabwe</option><option value="358">Aland Islands</option></select><input type="text" name="chf_sub_mob" id="chf_sub_mob" placeholder="Mobile" class="common_footer_sub_txt" pattern="[0-9]+"><input type="text" name="chf_sub_otp" id="chf_sub_otp" placeholder="Enter OTP" style="display:none;" class="common_footer_sub_txt" pattern="[0-9]+"><input type="button" value="Subscribe" name="chf_sub_but" id="chf_sub_but" onclick="send_subscribe()" class="common_footer_sub_but" style="visibility: visible;"><input type="button" value="Verify" name="chf_sub_ver" id="chf_sub_ver" onclick="send_verify()" style="display: none; visibility: visible;" class="common_footer_sub_but"></div><div style="display:none;" id="chf_sub_mbut"><input type="button" value="Subscribe" name="chf_sub_mbut" onclick="send_subscribe()" style="display: none; visibility: visible;" class="common_footer_sub_div"></div><div class="common_footer_sub_div1"><div id="chf_demail" onclick="rad(&quot;email&quot;)" class="common_footer_sub_elem_sty"><span class="common_footer_sub_elem chf_demail_cls"></span></div><div id="chf_dmobile" onclick="rad(&quot;mobile&quot;)" class="common_footer_sub_elem_sty"><span class="common_footer_sub_elem chf_dmobile_cls"></span></div></div></form></div>
+</body></html>

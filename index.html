@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="planificacion">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<meta charset="UTF-8">
+
+	<!-- BOOTSTRAP CSS -->
+	<link rel="stylesheet" href="lib/bootstrap-3.3.6/css/bootstrap.min.css">
+
+	<!-- ESTILOS TEMA BOOSTRAP -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- <link rel="stylesheet" href="lib/sticky/style.css"> -->
+
+	<!-- MORRIS JS CHASRT STYLE -->
+	<link rel="stylesheet" href="lib/morris/morris.css">
+
+	<title>Planificacion y Control de la Produccion</title>
+	
+
+</head>
+<body>
+
+	<!-- VISTA PARA LAS RUTAS PRINCIPALES -->
+	<div ui-view style="margin: 0px"></div>
+	
+
+	<!-- ANGULAR JS NATIVE -->
+	<script src="lib/angular/angular1.4.7.min.js"></script>
+
+	<!-- SCRIPTS PARA BOOTSTRAP -->
+	<!-- JQUERY  -->
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/sticky/jquery.sticky.js"></script>
+	<script src="lib/sticky/numeric.js"></script>
+	<script src="lib/sticky/common.js"></script>
+
+
+	<!-- BOOTSTRAP JS -->
+	<script src="lib/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+
+	<!-- UNDERSCORE JS -->
+	<script src="lib/underscore/underscore1.8.3.min.js"></script>
+
+	<!-- UI-ROUTER ANGULAR JS 0.2.15-->
+	<script src="lib/ui-router/angular-ui-router.min.js"></script>
+
+	<!-- UI bootstrap -->
+	<script src="lib/ui-bootstrap/ui-bootstrap-0.14.2.min.js"></script>
+	<script src="lib/ui-bootstrap/ui-bootstrap-tpls-0.14.2.min.js"></script>
+	
+	<!-- SCRIPTS DE LA APLICACION -->
+	<script src="app/app.module.js"></script>
+	<script src="app/app.config.js"></script>
+
+	<!-- MODULO DE PROGRAMACION NN -->
+	 
+	 <script src="app/programacion-nn/programacion-nn.module.js"></script>
+	 <script src="app/programacion-nn/programacion-nn.route.js"></script>
+	 <script src="app/programacion-nn/programacion-nn.controller.js"></script>
+	 <script src="app/programacion-nn/assign.js"></script>
+
+	<!-- SCRIPTS MODULO DE COMPONENTES Y DIRECTIVAS COMUNES A TODA LA APLICACION-->
+	<script src="common/common.module.js"></script>
+	<script src="common/cabecera-pagina/cabecera-pagina.directive.js"></script>
+
+
+	<!-- MORRIS JS CHARTS -->
+	<script src="lib/morris/raphael-min.js"></script>
+	<script src="lib/morris/morris.min.js"></script>
+	<script src="lib/morris/angular-morris-chart.min.js"></script>
+</body>
+</html>

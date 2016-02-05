@@ -1,0 +1,72 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="page-header">
+			  <h1>Programacion n/n<small>  Planificacion y Control de la Produccion II</small></h1>
+			</div>
+
+			<div class="alert alert-success">
+				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				<strong>Algoritmo de Asignacion Tarea/Maquina</strong> Algoritmo de 4 pasos para la asignacion de tarea al menor costo
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<div class="panel panel-primary">
+				  <div class="panel-heading">
+						<h3 class="panel-title">Matriz: Costo de Asignacion tarea maquina</h3>
+				  </div>
+				  <div class="panel-body">
+						<div class="table-responsive">
+							<table class="table table-hover">
+								<thead>
+									<tr>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+				  </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<div class="panel panel-primary">
+				  <div class="panel-heading">
+						<h3 class="panel-title">Asignacion Tarea/Maquina Optima</h3>
+				  </div>
+				  <div class="panel-body">
+				  	<div class="ec_calculator_gen clearfix">
+				  		<h2>Ingrese los datos de la matriz de asignacion</h2><form name="first">
+				  		<div class="group clearfix">
+				  			<label>Inserte el el tamanio de la matriz</label>
+				  			<input type="text" id="input" onkeyup="tabls_creation();" class="easypositive">
+				  		</div>
+
+				  		<div id="matrix1" class="table"></div>
+
+				  		<div class="group clearfix">
+				  			<input type="button" value="Calculate" onclick="tqe_perc()" style="visibility: visible;">
+				  			<input type="reset" onclick="clearall()" value="Reset" style="visibility: visible;"><div class="errClass" id="dynErrDisp"></div><div id="calciScroll"></div><div class="errClass" id="dynErrDisp" style="display: none;"></div><div id="calciScroll"></div><div class="errClass" id="dynErrDisp" style="display: none;"></div><div id="calciScroll"></div><div class="errClass" id="dynErrDisp" style="display: none;"></div><div id="calciScroll"></div><div class="errClass" id="dynErrDisp" style="display: none;"></div><div id="calciScroll"></div><div class="errClass" id="dynErrDisp" style="display: none;"></div><div id="calciScroll"></div>
+				  		</div>
+
+				  		<div class="group clearfix">
+				  			<label>Asignacion optima</label>
+				  			<textarea id="output" rows="10" cols="30" readonly=""></textarea>
+				  		</div>
+				  	</form> 
+
+				  </div>
+			</div>
+		</div>
+	</div>
+</div>
