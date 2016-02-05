@@ -7,13 +7,13 @@
 
 			<div class="alert alert-success">
 				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-				<strong>Algoritmo de Asignacion Tarea/Maquina</strong> Algoritmo de 4 pasos para la asignacion de tarea al menor costo
+				<strong><span class="glyphicon glyphicon-info-sign"></span>   Algoritmo de Asignacion Tarea/Maquina</strong> Algoritmo de 4 pasos para la asignacion de tarea al menor costo
 			</div>
 
 			<div class="alert">
 				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-				<h6><strong>Estudiante : </strong> Beimar Eninfo Huarachi Mamani</h6>
-				<h6><strong>Carrera : </strong> Ingenieria de Sistemas</h6>
+				<h6><strong><span class="glyphicon glyphicon-user"></span>    Estudiante : </strong> Beimar Eninfo Huarachi Mamani </h6>
+				<h6><strong><span class="glyphicon glyphicon-road"></span>    Carrera : </strong> Ingenieria de Sistemas</h6>
 			</div>
 		</div>
 	</div>
@@ -22,7 +22,7 @@
 		<div class="col-md-12">
 			<div class="panel panel-primary">
 				  <div class="panel-heading">
-						<h3 class="panel-title">Matriz: Costo de Asignacion tarea maquina</h3>
+						<h3 class="panel-title"><span class="glyphicon glyphicon-th"></span>  Matriz: Costo de Asignacion tarea maquina</h3>
 				  </div>
 				  <div class="panel-body">
 				  	<div class="ec_calculator_gen clearfix">
@@ -35,9 +35,13 @@
 				  		<div id="matrix1" class="table"></div>
 
 				  		<div class="group clearfix">
-				  			<input class="btn btn-primary" type="button" value="Calcular optimo" onclick="tqe_perc()" style="visibility: visible;">
+				  			<!-- <input class="btn btn-primary" type="button" value="Calcular optimo" onclick="tqe_perc()" style="visibility: visible;"> -->
 
-				  			<input class="btn btn-danger" type="reset" onclick="clearall()" value="Limpiar" style="visibility: visible;"><div class="errClass" id="dynErrDisp">
+				  			<button type="button" class="btn btn-primary" onclick="tqe_perc()"><i class="glyphicon glyphicon-wrench"></i>  Calcular Optimo</button>
+
+				  			<!-- <span class="glyphicon glyphicon-wrench"></span><input class="btn btn-danger" type="reset" onclick="clearall()" value="Limpiar" style="visibility: visible;"><div class="errClass" id="dynErrDisp"> -->
+
+				  			<button type="button" class="btn btn-danger errClass" onclick="clearall()"><i class="glyphicon glyphicon-refresh" type="reset" id="dynErrDisp"></i>  Limpiar</button>
 				  				
 				  			</div><div id="calciScroll"></div><div class="errClass" id="dynErrDisp" style="display: none;"></div><div id="calciScroll"></div><div class="errClass" id="dynErrDisp" style="display: none;"></div><div id="calciScroll"></div><div class="errClass" id="dynErrDisp" style="display: none;"></div><div id="calciScroll"></div><div class="errClass" id="dynErrDisp" style="display: none;"></div><div id="calciScroll"></div><div class="errClass" id="dynErrDisp" style="display: none;"></div><div id="calciScroll"></div>
 				  		</div>
