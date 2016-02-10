@@ -14,6 +14,9 @@
  FORBIDDEN_VALUE: -999999;
 
 var almacen = [];
+
+var asignacionOptima = [];
+var costoTotal = 0;
  
  var formation=new Array();
  var squad=new Array();
@@ -101,9 +104,9 @@ function tqe_perc()
   });
   //console.log(beimar);
 
-  var mapaResultado = [];
+  mapaResultado = [];
   matrix12(beimar, 0, 0, "", 0,"",mapaResultado);
-  console.log(mapaResultado);
+  //console.log(mapaResultado);
 
         $("#output").val(result);
 }
@@ -512,6 +515,8 @@ function tabls_creation()
  function getSolution(formation, squad) {
    var total = 0;
    var lineup = '';
+   asignacionOptima = [];
+   costoTotal = 0;
     // Changed from length of stars, since we must ignore some rows due to padding.
    for (var i = 0; i < rows; i++) {
      for (var j = 0; j < cols; j++) {
@@ -528,6 +533,12 @@ function tabls_creation()
 
 function getplayer(i,j)
 {
+  var objeto = {};
+  objeto.tarea = formation[i];
+  objeto.maquina = squad[j];
+  objeto.costominimo = almacen[i][j];
+  asignacionOptima.push(objeto);
+  costoTotal = costoTotal + almacen[i][j];
 return formation[i]+" => "+squad[j] + " = " + almacen[i][j];
 }
 function HgCoords() {
