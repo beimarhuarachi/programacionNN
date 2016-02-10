@@ -77,6 +77,34 @@ function tqe_perc()
 	matrix=v;
     
 	var result=hungarianAlgortithm(formation,squad);
+  var table = document.getElementById("idtabla");
+  var beimar = [];
+  for (var i = 1, row; row = table.rows[i]; i++) {
+     //iterate through rows
+     //rows would be accessed using the "row" variable assigned in the for loop
+     var otro = [];
+     for (var j = 1, col; col = row.cells[j]; j++) {
+      otro.push(j);
+      //console.log(col);
+       //iterate through columns
+       //columns would be accessed using the "col" variable assigned in the for loop
+     }
+     beimar.push(otro);  
+  }
+  //console.log(beimar);
+
+  var inputs = $('.easynumeric');
+  _.each(inputs, function(value, key, list){
+      var id = value.getAttribute('id');
+      var value = Number(value.value);
+      beimar[id[1]][id[2]] = value;
+  });
+  //console.log(beimar);
+
+  var mapaResultado = [];
+  matrix12(beimar, 0, 0, "", 0,"",mapaResultado);
+  console.log(mapaResultado);
+
         $("#output").val(result);
 }
 
@@ -125,6 +153,7 @@ function tabls_creation()
     oTable.setAttribute("class","table");
 
 	  oTable.setAttribute("align","center");
+    oTable.setAttribute("id","idtabla");
 
 	  // Insert a row into the header and set its background color.
 	  oRow = document.createElement("TR");
@@ -489,7 +518,7 @@ function tabls_creation()
        if (stars[i][j] == 1) {
       
          lineup+=getplayer(i,j)+"\n";
-         console.log(almacen[i][j]);
+         //console.log(almacen[i][j]);
        }
        // console.log(almacen[i][j]);
      }
@@ -505,6 +534,3 @@ function HgCoords() {
  row = -1;
  col = -1;
 }
-
-
-
